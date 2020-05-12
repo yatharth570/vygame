@@ -100,6 +100,7 @@ ul li a{
     margin-left: 3%;
     top: -6em; 
     z-index: 3;
+    
 }
 .slide .item{
     width:290px;
@@ -184,7 +185,7 @@ ul li a{
         background-color: black;
     }
     .slide .item{
-        width: 200px;
+        width: 170px;
         height: 120px;
         margin: 14px;
         
@@ -204,26 +205,23 @@ ul li a{
     }
 }    
 @media (max-width: 500px){
-    header a img{
-        width:30%;
-        height:30%
-    }
+    
     .background{
-        top: 48px;
+        top: 55px;
     }
     header{
-        background: rgba(15, 9, 9, 0.733);
+        background: rgba(15, 9, 9, 0.8);
     }
 
     .slide{
         top: 3em;
-        width: 100%;
-        margin-left: 6%;
     }
     .slide .item{
         width: 100px;
         height: 60px;
-        margin: 14px;
+        margin: 10px;
+        margin-right: 8px;
+        margin-left: 8px;
         
     
     }
