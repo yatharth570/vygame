@@ -4,21 +4,25 @@ function myFunction(x) {
 }
 $(document).ready(function () {
   $('.menu').click(function () {
-    $('ul').toggleClass('active');
+    $('ul#menu').toggleClass('active');
     $('header').toggleClass('h_active');
   })
 })
 
 $(function () {
   $('.slide').slick({
-    infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 4,
+    slidesToScroll: 2,
     arrows:false,
     dots:true,
-    cssEase:'linear',
     variableWidth: true,
     variableHeight: true,
+    cssEase: 'ease',
+    autoplay: true,
+    autoplaySpeed: 1000,
+    speed:2000,
+    infinite:true,
+    pauseOnHover:false,
     
 
 

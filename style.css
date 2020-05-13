@@ -25,12 +25,13 @@ header{
     
 
 }
+.logo{
+    margin-left:40px;
+    margin-top: 2px;
+}
 
-header a img{
-    margin: 5px 0px 0px 10px;
+header a {
     cursor: pointer;
-    
-    
 }
   
 ul a:hover {
@@ -178,6 +179,7 @@ ul li a{
     .active{
     
         display: block;
+        
     
     }
     .h_active{
@@ -210,9 +212,14 @@ ul li a{
         top: 55px;
     }
     header{
-        background: rgba(15, 9, 9, 0.8);
+        background: rgba(15, 9, 9, 1);
     }
-
+    .logo {
+        filter: invert(100%);
+    }
+    .bar1, .bar2, .bar3{
+        background-color: white;
+    }
     .slide{
         top: 3em;
     }
@@ -234,5 +241,6 @@ ul li a{
     .slick-dots{
         top:2em
     }
+    
 
 }
