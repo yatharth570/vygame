@@ -9,24 +9,27 @@ $(document).ready(function () {
   })
 })
 
-$(function () {
+$(document).ready(function () {
   $('.slide').slick({
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 4,
     arrows:false,
     dots:true,
     variableWidth: true,
     variableHeight: true,
-    cssEase: 'ease',
-    autoplay: true,
-    autoplaySpeed: 1000,
-    speed:2000,
-    infinite:true,
-    pauseOnHover:false,
+    cssEase: 'linear',
     
-
-
-  });
-  
-  
-});
+  });  
+})
+$(document).ready(function(){
+  $('.slider').slick({
+    arrows:true,
+    dots:false,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 3000,
+    nextArrow:"<img class='slick-next' src='img/arrow.png'>",
+    prevArrow:"<img class='slick-prev' src='img/arrow_prev.png'>",
+  })
+})

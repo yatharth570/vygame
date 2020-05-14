@@ -94,69 +94,52 @@ ul li a{
     width: 100%; 
     position: relative;   
     
+}  
+.slick-prev {
+    left: 40px; 
+    z-index: 10;
+   
+    
+}
+  .slick-next,.slick-prev {
+    right: 40px;
+    filter: invert(90%);
+    opacity: 0.6;
+    width: 70px;
+    height: 70px;
+}
+.slick-next:hover, .slick-prev:hover{
+    opacity: 1;
+
 }
 .slide{
     position: relative;
     display: flex;
     margin-left: 3%;
+    margin-right: 3%;
     top: -6em; 
     z-index: 3;
     
 }
 .slide .item{
-    width:290px;
-    height: 180px;
-    margin: 40px;
+    width:280px;
+    height: 200px;
     margin-left: 15px;
     margin-right: 15px;
 
 }
 .slide .item img{
-    width: 300px;
+    width: 280px;
     height: 200px;
 
 }
-.slick-dots{
-    position: relative;
-    right: 50%;
-    top: 13em;
-}
-.slick-dots li {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer;
+.slick-dots li button:before{
+    font-size: 15px;
 }
 
-.slick-dots li button {
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    cursor: pointer;
-    color: black;
-    border: 0;
-    outline: none;
-    background: transparent;
-}
 
-.slick-dots li button:before {
-    content: '•';
-    font-size: 50px;
-    line-height: 130px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    color: rgba(26, 13, 13, 0.566);
-}
+
+
 
 
 @media (max-width: 800px){
@@ -199,11 +182,12 @@ ul li a{
         
     
     }
-    .slick-dots{
-        top:5em
-    }
     .slide{
         top: 0em;
+    }
+    .slick-prev, .slick-next{
+        width: 60px;
+        height: 60px;
     }
 }    
 @media (max-width: 500px){
@@ -221,7 +205,7 @@ ul li a{
         background-color: white;
     }
     .slide{
-        top: 3em;
+        top: 0em;
     }
     .slide .item{
         width: 100px;
@@ -238,8 +222,10 @@ ul li a{
         
     
     }
-    .slick-dots{
-        top:2em
+    .slick-prev, .slick-next{
+        width: 40px;
+        height: 40px;
+        top: 130px;
     }
     
 
